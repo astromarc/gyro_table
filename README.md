@@ -45,4 +45,8 @@ You will receive
 ```
 p, 30, 3242
 ```
-Where `p` means you have send a `position` command, to turn `30` degrees CCW and `3242` are the milliseconds since you start the microcontroller.
+Where `p` means you have send a `position` command, to turn `30` degrees CCW and `3242` are the milliseconds since you start the microcontroller. If you sent `velocity`, you will get something like that:
+
+```
+v, 60,3453
+```
