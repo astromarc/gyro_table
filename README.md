@@ -30,17 +30,18 @@ v30
 
 And you will constantly rotate 30 deg/second CCW.
 
-If you're using command line to send the commands, you can append them by adding a sleep 1. Example (considering your port is ttyACM0:
+If you're using command line to send the commands, you can append them by adding a sleep 1. Example (considering your port is ttyACM0):
 
 ```sh
-$ echo -ne 'p360' > /dev/ttyACM0 && sleep 0.5 && echo -ne 'p-360' > /dev/ttyACM0
+$ echo -ne 'p360' > /dev/ttyACM0 && sleep 1 && echo -ne 'p-360' > /dev/ttyACM0
+
 ```
-This command will turn your 
+This command will turn your table 360 deg CCW and then 360 deg CW.
 
 
 # - What do you receive?
 
-You will receive 
+You will receive something like that:
 
 ```
 p, 30, 3242
